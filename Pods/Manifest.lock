@@ -1,0 +1,35 @@
+PODS:
+  - Google-Mobile-Ads-SDK (7.39.0)
+  - Liberty (1.2.1):
+    - Liberty/Core (= 1.2.1)
+  - Liberty/Core (1.2.1)
+  - Liberty/DFP (1.2.1):
+    - Google-Mobile-Ads-SDK
+    - Liberty/Core
+
+DEPENDENCIES:
+  - Google-Mobile-Ads-SDK (= 7.39.0)
+  - "Liberty (from `git@github.corp.ebay.com:eBay-Kleinanzeigen/ios-liberty-sdk.git`, branch `master`)"
+  - "Liberty/DFP (from `git@github.corp.ebay.com:eBay-Kleinanzeigen/ios-liberty-sdk.git`, branch `master`)"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Google-Mobile-Ads-SDK
+
+EXTERNAL SOURCES:
+  Liberty:
+    :branch: master
+    :git: "git@github.corp.ebay.com:eBay-Kleinanzeigen/ios-liberty-sdk.git"
+
+CHECKOUT OPTIONS:
+  Liberty:
+    :commit: ebb261d6dfe6b4282b541030edb389ee92d0e820
+    :git: "git@github.corp.ebay.com:eBay-Kleinanzeigen/ios-liberty-sdk.git"
+
+SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: d0f10a7c4d7015db23075ff316602350d12049db
+  Liberty: 64daa69881d674c6e54ca547331783b4fb1786b1
+
+PODFILE CHECKSUM: 9b63220f2733b2755bc0359469b3259b92f4e524
+
+COCOAPODS: 1.6.1

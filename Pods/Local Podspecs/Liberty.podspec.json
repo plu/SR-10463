@@ -1,0 +1,123 @@
+{
+  "name": "Liberty",
+  "version": "1.2.1",
+  "summary": "Liberty purpose is to make mobile advertisement configurable",
+  "static_framework": true,
+  "homepage": "https://github.corp.ebay.com/eBay-Kleinanzeigen/ios-liberty-sdk",
+  "license": {
+    "type": "NONE",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ignazio Calò": "icalo@ebay.com"
+  },
+  "source": {
+    "git": "https://github.corp.ebay.com/eBay-Kleinanzeigen/ios-liberty-sdk.git",
+    "tag": "1.2.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "4.2",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "frameworks": "UIKit",
+      "source_files": "Liberty/Classes/Core/**/*"
+    },
+    {
+      "name": "DFP",
+      "source_files": "Liberty/Classes/AdNetworks/DFP/**/*",
+      "dependencies": {
+        "Google-Mobile-Ads-SDK": [
+
+        ],
+        "Liberty/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "AdSense",
+      "source_files": "Liberty/Classes/AdNetworks/AdSense/**/*",
+      "dependencies": {
+        "Google-Mobile-Ads-SDK": [
+
+        ],
+        "Liberty/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "AFSH",
+      "source_files": "Liberty/Classes/AdNetworks/AFSH/**/*",
+      "dependencies": {
+        "Google-Mobile-Ads-SDK": [
+
+        ],
+        "Liberty/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Prebid",
+      "source_files": "Liberty/Classes/AdNetworks/Prebid/**/*",
+      "dependencies": {
+        "Liberty/Core": [
+
+        ],
+        "Liberty/DFP": [
+
+        ],
+        "PrebidMobile": [
+          "~> 0.5.2"
+        ]
+      }
+    },
+    {
+      "name": "CustomRendering",
+      "source_files": "Liberty/Classes/AdNetworks/CustomRendering/**/*",
+      "dependencies": {
+        "Google-Mobile-Ads-SDK": [
+
+        ],
+        "Liberty/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "StubNetwork",
+      "source_files": "Liberty/Classes/AdNetworks/StubNetwork/**/*",
+      "dependencies": {
+        "Liberty/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "AFSHNative",
+      "source_files": "Liberty/Classes/AdNetworks/AFSHNative/**/*",
+      "dependencies": {
+        "Google-AFSNative": [
+
+        ],
+        "Liberty/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Empty",
+      "source_files": "Liberty/Classes/AdNetworks/Empty/**/*",
+      "dependencies": {
+        "Liberty/Core": [
+
+        ]
+      }
+    }
+  ]
+}
